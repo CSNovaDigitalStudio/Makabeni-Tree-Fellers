@@ -129,6 +129,7 @@ button, input, textarea { font: inherit; }
 .service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .service-card { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--white); transition: transform .28s ease, box-shadow .28s ease; }
 .service-card:hover { transform: translateY(-7px); box-shadow: var(--shadow); }
+.service-card:last-child { grid-column: 2; }
 .service-image { height: 230px; overflow: hidden; background: #dfe5e1; }
 .service-image img { height: 100%; object-fit: cover; transition: transform .45s ease; }
 .service-card:hover img { transform: scale(1.05); }
@@ -207,6 +208,7 @@ button, input, textarea { font: inherit; }
   .main-nav { gap: 18px; }
   .hero-grid { grid-template-columns: 1fr .72fr; gap: 40px; }
   .service-grid { grid-template-columns: repeat(2, 1fr); }
+  .service-card:last-child { grid-column: auto; }
   .service-card p { min-height: auto; }
   .split-grid { gap: 50px; }
   .main-photo { height: 520px; }
